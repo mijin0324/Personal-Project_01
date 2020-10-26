@@ -1,0 +1,168 @@
+@CHARSET "UTF-8";
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#main{
+	font-family: 'Libre Baskerville', Libre Baskerville, Arial, 
+				  malgun gothic,맑은고딕, NanumGothic,dotum,돋움,sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	cololr: #fff;
+	text-align: center;
+	margin: 0 auto;	
+}
+
+.PicDiv{
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.Pic_Title h2{
+	font-family: 'Lalezar', cursive;
+	color: #ff0059;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	font-size: 60px;
+	letter-spacing: 8px;
+}
+.PicboardDiv{
+	margin-bottom: 50px;
+}
+
+.pic_infoDiv{
+	display: inline-block;
+	margin: 20px;
+}
+
+.imgDiv img{ 
+	width: 300px;
+	height: auto;
+}
+
+.write_btndiv{
+	float: right;
+	margin-right: 20%;
+}
+
+input.write_btn{
+	display: block;
+}
+
+.board_search{
+	overflow: hidden;
+	clear: both;	
+}
+
+
+
+fieldset {
+	border: 0;
+}
+
+legend {
+	visibility: hidden;
+	left: -9999px;
+	top: -9999px;
+	width: 0;
+	height: 0;
+	line-height: 0;
+}
+select{
+	height: 20px;
+}
+
+#search_key{
+	width: 83px;
+	height: 27px;
+}
+select#search_key{
+	margin: 10px;
+}
+#search_word{
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 4px;	
+}
+
+
+#search{
+	height: 19px;
+	line-height: 16px;
+	padding: 2px 4px;
+	border: 1px solid #888;
+	width: 200px;
+	margin-left: 10px;
+}
+
+a, a:VISITED, a:LINK{
+	color:black;
+}
+
+
+.search_btn{
+	display: inline-block;
+	padding: 0 5px;
+	margin: 5px;
+}
+
+.write_btn{
+	float:right;
+	display: inline-block;
+	width: 100px;
+	line-height: 28px;
+	border: 1px solid #000;
+	text-align: center;
+	margin-right: 120px;
+	margin-bottom: 30px;
+	background: white;
+	
+}
+
+.write_btn:hover{
+	background: #000;
+	color: white;
+}
+
+ol{
+	display: inline-block;
+	padding: 0 10px;
+}
+
+ol > li{
+	list-style: none;
+	float: left;
+	margin: 10px;
+	margin-top: 10px;
+	padding: 0;
+}
+
+
+.displaynone{
+	display: none;
+}
+
+
+#search_btn{
+	display: inline-block;
+	width: 100px;
+	line-height: 28px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+}
+
+#search_btn:ACTIVE{
+	background: #000;
+	color: white;
+}
+
+
+.board_paging{
+	margin-top: 30px;
+}

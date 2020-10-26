@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+
+
+*{
+	text-align: center;
+    margin: 0 auto;  
+}
+#header{
+	background-color: #14b378;
+	position: sticky;
+    top: 0;
+}
+
+
+#main{
+	font-family: 'Nanum Gothic', sans-serif;
+	position: relative;
+}
+
+
+.AlbumMainWrap{
+	
+	position: absolute;
+}
+
+.AlbumTitle{
+	font-family: 'Lalezar', cursive;
+	color: #ff0059;
+	font-size: 40px;
+	letter-spacing: 6px;
+	padding-top: 50px;
+	margin-bottom: 30px;
+}
+
+.AlbumMainWrap ul > li {
+	float: left;
+	margin-left: 140px; 
+	margin-bottom: 50px;
+}
+
+.Album_imgList1, .Album_imgList2, .Album_imgList3,
+.Album_imgList4, .Album_imgList5, .Album_imgList0{
+	position: relative;
+	width: 250px;
+	height: 250px;
+}
+
+.Album_imgList0 .cap0, .Album_imgList1 .cap1,
+.Album_imgList2 .cap2, .Album_imgList3 .cap3,
+.Album_imgList4 .cap4, .Album_imgList5 .cap5{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: white;
+	border: 6px solid #b428ff;
+	color: #b428ff;
+	text-align: center;
+	width: 250px;
+	line-height: 250px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.imgCap0, .imgCap1, .imgCap2, .imgCap3, .imgCap4, .imgCap5{
+	font-size: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: 900px;
+	line-height: 38px;
+}
+
+
+.Album_imgList0:HOVER .cap0,
+.Album_imgList1:HOVER .cap1,
+.Album_imgList2:HOVER .cap2,
+.Album_imgList3:HOVER .cap3,
+.Album_imgList4:HOVER .cap4,
+.Album_imgList5:HOVER .cap5{
+	opacity: 1;
+	margin: 0;
+
+}

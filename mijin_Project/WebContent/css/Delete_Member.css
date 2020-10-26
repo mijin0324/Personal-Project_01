@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+#main, .Delete_mainWrap, table{
+	text-align: center;
+/* 	position: relative; */
+    margin: 0 auto;  
+}
+
+
+table{
+	font-family: 'Nanum Gothic', sans-serif;
+/* 	font-family: 'Gothic A1', sans-serif; */
+	letter-spacing: 3px;
+	border-collapse: separate;
+	border-spacing: 0 0px;
+}
+
+.title > h2{
+	font-family: 'Lalezar', cursive;
+	color: #2c47cc;
+	font-size: 60px;
+	letter-spacing: 6px;
+	padding-top: 60px;
+}
+
+.title > p{
+	margin-top: 50px;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-family: 'Gothic A1', sans-serif;
+	
+}
+
+.thpass{
+	padding-right: 15px;
+}
+
+
+
+
+
+#go_deletePro{
+	width: 400px;
+	padding: 10px;
+	letter-spacing: 10px;
+	font-size: 16px;
+	background-color: white;
+	border: 2px solid black;
+	margin-top: 80px;
+}
+
+input{
+	padding: 5px;
+}
+
+#go_deletePro:hover{
+	background-color: black;
+	color: white;
+}

@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+#main{
+	font-family: 'Libre Baskerville', Libre Baskerville, Arial, 
+				  malgun gothic,맑은고딕, NanumGothic,dotum,돋움,sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	cololr: #fff;
+}
+
+
+
+.Pic_Title h2{
+	font-family: 'Lalezar', cursive;
+	color: #ff0059;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	font-size: 60px;
+	letter-spacing: 8px;
+	text-align: center;
+}
+
+input{
+	font-family: 'Libre Baskerville', Libre Baskerville, Arial, 
+				  malgun gothic,맑은고딕, NanumGothic,dotum,돋움,sans-serif;
+	font-size: 19px;
+	padding: 5px;
+}
+
+
+input[type=button], input[type=submit]{
+	display: inline-block;
+	line-height: 28px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 8px;
+}
+
+input[type=button]:HOVER, input[type=submit]:HOVER{
+	background-color: black;
+	color:white;
+}
+
+.formDiv{
+	text-align: center;
+}
+
+table{
+	margin: 0 auto;
+	border-spacing: 50px;
+	border: 1px solid #bbb;
+	width: 500px;
+	height: 500px;
+}
+
+input#pic_fileOnly{
+	width: 250px;
+}
+
+input[type=submit]{
+	margin-top: 50px;
+}

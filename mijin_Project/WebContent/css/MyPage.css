@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+
+#main, .UpdateFormWrap, table{
+	text-align: center;
+    margin: 0 auto;  
+}
+
+table{
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 3px;
+}
+
+.title > h2{
+	font-family: 'Lalezar', cursive;
+	color: #2c47cc;
+	font-size: 60px;
+	letter-spacing: 6px;
+	padding-top: 50px;
+}
+
+.plz {
+	letter-spacing: 5px;
+}
+
+.UpdateFormWrap{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+table{
+	padding: 10px;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	width: 800px;
+}
+
+td{
+  padding: 10px;
+  margin: 10px;
+  padding-left: 50px;
+}
+
+.th1{
+	width: 100px;
+	padding: 10px;
+	margin-right: 30px;
+}
+
+.td1{
+	width: 700px;
+	margin-left: 30px;
+}
+
+input{
+	padding: 5px;
+}
+
+.checkID{
+	color: black;
+	background-color: white;
+	border: 3px solid black;	
+}
+
+p{
+	line-height: 28px;
+}
+
+.pwdCheck{
+	width: 250px;
+}
+
+.submit{
+	width: 250px;
+	padding: 10px;
+	letter-spacing: 10px;
+	font-size: 20px;
+	background-color: white;
+	border: 5px solid black;
+}
+
+.deleteMember{
+	width: 500px;
+	padding: 10px;
+	letter-spacing: 10px;
+	font-size: 20px;
+	background-color: white;
+	border: 5px solid black;
+	wid
+}
+
+
+.submit:hover, .deleteMember:hover{
+	background-color: black;
+	color: #ffdf23;
+}
+
+
+
+
+#sample4_postcode, #sample4_button, #sample4_roadAddress, 
+#sample4_jibunAddress, #sample4_detailAddress, #sample4_extraAddress{
+	margin: 4px;
+}
+
+#sample4_button{
+	color: black;
+	background-color: white;
+	border: 3px solid black;
+}
+
+
+#sample4_button:HOVER, .checkID:HOVER {
+	color: white;
+	background-color: black;
+	border: 3px solid white;
+}

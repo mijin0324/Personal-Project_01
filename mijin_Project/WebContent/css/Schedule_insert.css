@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+
+*{
+	text-align: center;
+    margin: 0 auto;  
+	font-family: 'Lalezar', sans-serif;
+	font-size: 17px;
+}
+
+select{
+	padding: 5px;
+	margin-left: 10px;
+}
+
+.selectdiv{
+	margin: 20px;
+}
+
+.submitdiv{
+	font-size: 25px;
+}
+
+.contents{
+	padding: 5px;
+	width: 400px;
+}
+
+.sch_submit{
+	margin: 10px;
+	padding: 5px;
+	border: 3px solid black;
+	background-color: white;
+}
+.sch_submit:HOVER {
+	background-color: black;
+	color: yellowgreen;
+}

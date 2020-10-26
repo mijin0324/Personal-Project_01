@@ -1,0 +1,292 @@
+@CHARSET "UTF-8";
+
+
+/*
+
+Main
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700');
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Open Sans", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
+  margin: 0;
+}
+
+
+
+
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+
+.spanCon {
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 8rem;
+	line-height: 1;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+	
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		width: 0px;
+		height: 1px;
+		left: 0;
+		background-color: rgba(0,0,0,0.2);
+		z-index: -1;
+	}
+	
+	&::before {
+		top: 1.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+	
+	&::after {
+		bottom: 0.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+	
+}
+
+.title-container {
+	font-size: 0;
+	position: relative;
+	margin:0 auto; 
+	overflow: hidden;
+	padding-bottom: 0.4rem;
+}
+
+@keyframes up {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
+@keyframes draw {
+	
+	100% {
+		width: 100%;
+	}
+	
+}
+
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#mainTextID{
+	
+}
+
+a:VISITED{
+	text-decoration: none;
+	color: black;
+}
+
+
+a:ACTIVE{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+a:hover{
+	text-decoration: none;
+	color: #646464;
+}
+
+
+#mainTextID{
+	color: #646464;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+.sm-link{
+	--uismLinkDisplay: var(--smLinkDisplay, inline-flex);	
+	--uismLinkTextColor: var(--smLinkTextColor);
+	--uismLinkTextColorHover: var(--smLinkTextColorHover);	
+	
+	display: var(--uismLinkDisplay);
+	color: var(--uismLinkTextColor);
+	/* 					*/
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+a.sm-link{
+	text-decoration: none;
+}
+
+
+
+.sm-link__label{
+  display: block;
+}
+
+
+
+.sm-link_bg {
+	--uismLinkLineColor: var(--smLinkLineColor, #000);	
+	--uismLinkTextColorHover: var(--smLinkTextColorHover, #fff);	
+	--uismLinkPadding: var(--smLinkPadding, 5px);
+	
+	padding: var(--uismLinkPadding);
+							
+	transition: color .3s ease-out;
+}
+
+
+
+.sm-link_bg::before, 
+.sm-link_bg::after{
+  content: "";
+  background-color: var(--uismLinkLineColor);	
+  opacity: 0;
+  position: absolute;
+		
+							
+  transition: transform .2s ease-out, opacity .2s ease-out .03s;
+}
+
+
+
+.sm-link_bg .sm-link__label{			
+  position: relative;
+  z-index: 2;
+  color: pink;
+}
+
+.sm-link_bg:hover::before, 
+.sm-link_bg:hover::after{
+  opacity: 1;
+	transition-duration: .35s, .35s;
+	transition-delay: 0s, 0s;
+}
+
+.sm-link_bg:hover{
+	color: var(--uismLinkTextColorHover);
+}
+
+.sm-link_text::before{
+  content: attr(data-sm-link-text);
+	color: var(--uismLinkTextColorHover);
+  position: absolute;
+}
+
+.sm-link_text::before, 
+.sm-link_text .sm-link__label{
+  transition-property: transform;
+	transition-timing-function: cubic-bezier(.86, .6, .08, 1.01); 
+	transition-duration: .3s;
+}
+
+.sm-link_text:hover::before,
+.sm-link_text:hover .sm-link__label{
+	transition-duration: .4s;
+}
+
+
+/* effect 9 */
+
+.sm-link9::before,
+.sm-link9::after{
+  width: 50%;
+  height: 100%;
+  top: 0;
+}
+
+.sm-link9::before{
+  left: 0;
+ 						
+  transform: translate3d(-100%, 0, 0);
+}
+
+.sm-link9::after{
+  right: 0;
+   						
+  transform: translate3d(100%, 0, 0);
+}
+
+.sm-link9:hover::before,
+.sm-link9:hover::after{
+	 						
+  transform: translate3d(0, 0, 0);  
+}
+
+
+.sm-link{
+	--smLinkPadding: 10px 15px;
+	--smLinkLineWeight: 5px;
+	--smLinkLineColor: #000000;
+	--smLinkTextColor: #ffffff;
+	--smLinkTextColorHover: #1b255a;
+}
+
+.sm-link_bg{
+	--smLinkTextColorHover: #fff;
+}
+
+.section:nth-child(2n+2){
+ 	background-color: #afc0e2;
+}
+.section__item{
+/* 	margin: 0 auto; */
+}
+
+
+
+
